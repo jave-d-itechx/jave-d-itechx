@@ -5,7 +5,6 @@
 📫 You can reach me at javeaaron123@gmail.com
 😄 Pronouns: He/Him
 ⚡ Fun fact: I love to study and play online games in my free time
-
 <!---
 jave-d-itechx/jave-d-itechx is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
