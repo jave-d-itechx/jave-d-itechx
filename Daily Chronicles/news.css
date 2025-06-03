@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1000; /* Ensures it stays above other elements */
+    background: #003366;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 40px;
+    font-family: "Old English Text MT", "Blackletter", serif;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.article-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.article-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.article-container h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+.article-meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.article-content {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.back-button:hover {
+    background: #001f4d;
+}
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#a-hover {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 600;
+}
+
+#a-hover:hover {
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+}
+
+a:hover {
+    color: red;
+}
+
+#highlighted-text{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.breaking-news {
+    background: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+#img1 {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    display: block;
+}
+#img2 {
+    width: 600px;
+    height: 380px;
+    margin: auto;
+    display: block;
+}
+#img3 {
+    width: 400px;
+    height: 180px;
+    margin: auto;
+    display: block;
+}
+#img4 {
+    width: 550px;
+    height: 450px;
+    margin: auto;
+    display: block;
+}
+.menu-toggle{
+    display: none;
+}
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .category-news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+    nav {
+        display: none; /* Initially hide the nav */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #003366;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav.nav-active {
+        display: block; /* Show the nav when active */
+    }
+    nav ul {
+        display: block;
+        padding: 0;
+    }
+    nav ul li {
+        display: flex;
+        justify-content: center; 
+        margin: 10px 0;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .category-news {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .category-news img {
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 12px;
+    }
+    .logo {
+        font-size: 40px;
+    }
+    .category-news {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .category-news img {
+        max-height: 100px;
+    }
+    .breaking-news {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
